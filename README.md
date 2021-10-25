@@ -6,3 +6,6 @@ Java with Gradle
 
 ## Day 02
 Node with yarn
+
+## Day 03
+Go
