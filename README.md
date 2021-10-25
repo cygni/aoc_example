@@ -13,3 +13,5 @@ Go
 ## Day 04
 Python
 
+## Day 05
+C
