@@ -8,8 +8,8 @@ getSolutionPart2 <- function() {
 
 part <- Sys.getenv("part")
 
-if (part == "part1") {
-    print (getSolutionPart1())
-} else {
+if (part == "part2") {
     print (getSolutionPart2())
+} else {
+    print (getSolutionPart1())
 }

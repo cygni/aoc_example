@@ -19,3 +19,5 @@ C
 ## Day 06 
 R
 
+## Day 07
+Rust

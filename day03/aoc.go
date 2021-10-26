@@ -16,9 +16,9 @@ func getSolutionPart2() int {
 func main() {
 	part := os.Getenv("part")
 
-	if part == "part1" {
-		fmt.Println(getSolutionPart1())
-	} else {
+	if part == "part2" {
 		fmt.Println(getSolutionPart2())
+	} else {
+		fmt.Println(getSolutionPart1())
 	}
 }

@@ -13,10 +13,10 @@ int main() {
 
     char* part = getenv("part");
 
-    if (strcmp("part1", part) == 0) {
-        printf("%i\n", getSolutionPart1());
-    } else {
+    if (strcmp("part2", part) == 0) {
         printf("%i\n", getSolutionPart2());
+    } else {
+        printf("%i\n", getSolutionPart1());
     }
 
    return 0;

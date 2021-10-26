@@ -14,9 +14,9 @@ public class App {
 
     public static void main(String[] args) {
         String part = System.getenv("part") == null ? "part1" : System.getenv("part");
-        if (part.equals("part1"))
-            System.out.println(new App().getSolutionPart1());
-        else
+        if (part.equals("part2"))
             System.out.println(new App().getSolutionPart2());
+        else
+            System.out.println(new App().getSolutionPart1());
     }
 }
