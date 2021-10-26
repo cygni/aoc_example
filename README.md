@@ -21,3 +21,6 @@ R
 
 ## Day 07
 Rust
+
+## Day 08
+.NET Core 5.0
