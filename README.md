@@ -15,3 +15,7 @@ Python
 
 ## Day 05
 C
+
+## Day 06 
+R
+
