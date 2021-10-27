@@ -24,3 +24,13 @@ Rust
 
 ## Day 08
 .NET Core 5.0
+
+## Day 09
+Haskell
+
+## Day 10
+Lisp
+
+## Day 11
+Scheme
+
