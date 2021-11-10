@@ -50,11 +50,11 @@ Rust
 .NET Core 5.0
 
 ### Day 09
-Haskell
+Tailspin
 
 ### Day 10
-Lisp
+F# (fsharp)
 
 ### Day 11
-Scheme
+Julia
 
