@@ -1,10 +1,8 @@
-function solutionpart1()
-  "1337"
-end
+include("solutions.jl")
 
-function solutionpart2()
-  "42"
-end
+input = "app"
+
+println("running " * latebinding())
 
 part = get(Base.ENV, "part", "part1")
 println(if part == "part1"
