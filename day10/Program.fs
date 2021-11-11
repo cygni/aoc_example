@@ -1,10 +1,7 @@
 // Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
 
 open System
-
-let solutionPart1 = "1337"
-
-let solutionPart2 = "42"
+open Day10
 
 [<EntryPoint>]
 let main argv =
