@@ -5,6 +5,8 @@ CREATE TEMP TABLE part (part CHAR(5) NOT NULL);
 CREATE TEMP TABLE input (linenum SMALLSERIAL, "value" VARCHAR(5) NOT NULL);
 \copy input ("value") FROM 'input.txt';
 
+\copy (SELECT 'SQL') TO STDOUT;
+
 WITH solutions AS (
   SELECT 'part1' AS part, "value" AS result FROM input
   WHERE linenum = 1 

@@ -18,7 +18,8 @@
   [& args]
   (let [part (or (System/getenv "part") "part1")
         input (parse-input (read-lines))]
-    (println (condp = part
-               "part1" (solution-part1 input)
-               "part2" (solution-part2 input)
-               (str "Unknown part " part)))))
+    (do (println "Clojure")
+        (println (condp = part
+                   "part1" (solution-part1 input)
+                   "part2" (solution-part2 input)
+                   (str "Unknown part " part))))))

@@ -4,6 +4,7 @@ import ballerina/os;
 int[] input = check readInput();
 
 public function main() {
+    io:println("Ballerina");
     string part = os:getEnv("part");
     io:println(solve(part));
 }
