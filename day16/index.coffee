@@ -1,4 +1,4 @@
 
-part = process.env.part || "part1";
+part = process.env.part || "part1"
 
 console.log "part is #{ part }"
