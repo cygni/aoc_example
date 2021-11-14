@@ -50,11 +50,22 @@ Rust
 .NET Core 5.0
 
 ### Day 09
-Haskell
+Tailspin
 
 ### Day 10
-Lisp
+F# (fsharp)
 
 ### Day 11
-Scheme
+Julia
 
+### Day 12
+Dart
+
+### Day 13
+Clojure (lisp), built with leiningen
+
+### Day 14
+Ballerina
+
+### Day 15
+Postgresql
