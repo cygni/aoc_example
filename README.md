@@ -75,3 +75,6 @@ Coffeescript
 
 ### Day 17
 Erlang
+
+### Day 18
+Ruby
