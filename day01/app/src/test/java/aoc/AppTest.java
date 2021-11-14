@@ -3,12 +3,27 @@
  */
 package aoc;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class AppTest {
-    @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a solution", classUnderTest.getSolutionPart1());
+    private static final List<Integer> INPUT = List.of(17, 56);
+    App classUnderTest;
+
+    @BeforeEach
+    void createSubject() {
+        classUnderTest = new App(INPUT);
+    }
+
+    @Test void part1ReturnsFirstAsString() {
+        assertEquals("17", classUnderTest.getSolutionPart1());
+    }
+
+    @Test void part2ReturnsSecondAsString() {
+        assertEquals("56", classUnderTest.getSolutionPart2());
     }
 }
