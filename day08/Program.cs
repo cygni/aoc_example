@@ -1,29 +1,39 @@
 ﻿using System;
+using System.Linq;
 
 namespace day08
 {
     class Program
     {
-        static int getSolutionPart1()
+        public static string getSolutionPart1(int[] input)
         {
-            return 1337;
+            return input[0].ToString();
         }
 
-        static int getSolutionPart2()
+        public static string getSolutionPart2(int[] input)
         {
-            return 42;
+            return input[1].ToString();
         }
 
         static void Main(string[] args)
         {
+            int[] input = parseInput("input.txt");
+
             var part = Environment.GetEnvironmentVariable("part");
 
+            Console.WriteLine("C#");
             if ("part2".Equals(part)) {
-                Console.WriteLine(getSolutionPart2());
+                Console.WriteLine(getSolutionPart2(input));
             } else {
-                Console.WriteLine(getSolutionPart1());
+                Console.WriteLine(getSolutionPart1(input));
             }
             
+        }
+
+        static int[] parseInput(string filename) {
+            return System.IO.File.ReadLines(filename)
+            .Select(line => Int32.Parse(line))
+            .ToArray();
         }
     }
 }

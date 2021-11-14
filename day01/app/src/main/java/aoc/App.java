@@ -3,20 +3,40 @@
  */
 package aoc;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class App {
+    private final List<Integer> input;
+
+    public App(List<Integer> input) {
+        this.input = input;
+    }
+
     public String getSolutionPart1() {
-        return "1337";
+        return input.get(0).toString();
     }
 
     public String getSolutionPart2() {
-        return "42";
+        return input.get(1).toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        System.out.println("java");
+        List<Integer> input = parseInput("input.txt");
         String part = System.getenv("part") == null ? "part1" : System.getenv("part");
         if (part.equals("part2"))
-            System.out.println(new App().getSolutionPart2());
+            System.out.println(new App(input).getSolutionPart2());
         else
-            System.out.println(new App().getSolutionPart1());
+            System.out.println(new App(input).getSolutionPart1());
+    }
+
+    private static List<Integer> parseInput(String filename) throws IOException {
+        return Files.lines(Path.of(filename))
+            .map(Integer::parseInt)
+            .collect(Collectors.toList());
     }
 }

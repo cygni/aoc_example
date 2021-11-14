@@ -18,7 +18,7 @@
       "classPaths": ["/Users/torbjorn.gannholm/tobega/tailspin-v0/tailspin.jar"],
       "vmArgs": ["-Xmx4g"],
       "env": {"part": "part1"},
-      "args": "hello.tt"
+      "args": "app.tt < input.txt"
   },
   {
       "type": "java",
@@ -26,7 +26,7 @@
       "request": "launch",
       "mainClass": "tailspin.Tailspin",
       "classPaths": ["/Users/torbjorn.gannholm/tobega/tailspin-v0/tailspin.jar"],
-      "args": "--test ${file}"
+      "args": "--test app.tt < input.txt"
   }
 ]
 }

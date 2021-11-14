@@ -1,9 +1,21 @@
 import ballerina/io;
 import ballerina/os;
 
+int[] input = check readInput();
+
 public function main() {
+    io:println("Ballerina");
     string part = os:getEnv("part");
     io:println(solve(part));
+}
+
+function readInput() returns int[]|error {
+    string[] lines = check io:fileReadLines("input.txt");
+    int[] numbers = [];
+    foreach var line in lines {
+      numbers.push(check int:fromString(line));
+    }
+    return numbers;
 }
 
 function solve(string part) returns string {
@@ -21,10 +33,10 @@ function solve(string part) returns string {
 }
 
 function solutionPart1() returns string {
-    return "1337";
+    return input[0].toString();
 }
 
 function solutionPart2() returns string {
-    return "42";
+    return input[1].toString();
 }
 

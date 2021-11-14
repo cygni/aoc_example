@@ -4,10 +4,10 @@ import 'app.dart';
 void main() {
   group('basic tests', () {
     test('part1', () {
-      expect(solutionPart1(), equals('1337'));
+      expect(solutionPart1([1337, 42]), equals('1337'));
     });
     test('part2', () {
-      expect(solutionPart2(), equals('42'));
+      expect(solutionPart2([1337, 42]), equals('42'));
     });
   });
 }

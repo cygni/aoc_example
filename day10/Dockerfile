@@ -11,5 +11,6 @@ FROM mcr.microsoft.com/dotnet/runtime:5.0-alpine
 
 WORKDIR /app
 COPY --from=build /app .
+COPY input.txt .
 
 ENTRYPOINT ["./day10"]

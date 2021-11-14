@@ -1,9 +1,9 @@
 function solutionpart1()
-  "1337"
+  string(input[1])
 end
 
 function solutionpart2()
-  "42"
+  string(input[2])
 end
 
 function latebinding()
