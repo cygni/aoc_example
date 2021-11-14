@@ -1,13 +1,22 @@
+composer toint
+  <INT>
+end toint
+
+def input: [$IN::lines -> toint];
+
 source solutionPart1
-  '1337' !
+  '$input(1);' !
 end solutionPart1
 
 test 'part1 works'
-  assert $solutionPart1 <='1337'> 'leet'
+  modify program
+    def input: [17, 56];
+  end program
+  assert $solutionPart1 <='17'> 'leet'
 end 'part1 works'
 
 source solutionPart2
-  '42' !
+  '$input(2);' !
 end solutionPart2
 
 test 'part2 works'
@@ -19,5 +28,6 @@ end 'part2 works'
   when <='part1'|=''> do $solutionPart1 !
   when <='part2'> do $solutionPart2 !
   otherwise 'Unknown part $;' !
-\) -> '$;
+\) -> 'Tailspin
+$;
 ' -> !OUT::write

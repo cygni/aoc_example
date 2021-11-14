@@ -1,8 +1,10 @@
 include("solutions.jl")
 
-input = "app"
+input = open("input.txt") do file
+  [parse(Int32, line) for line in eachline(file)]
+end
 
-println("running " * latebinding())
+println("Julia")
 
 part = get(Base.ENV, "part", "part1")
 println(if part == "part1"

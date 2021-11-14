@@ -10,8 +10,4 @@ COPY . .
 RUN dart pub get --offline
 RUN dart compile exe app.dart -o app
 
-# Build minimal runtime
-FROM scratch
-COPY --from=build app .
-
-CMD ["/app"]
+CMD ["./app"]

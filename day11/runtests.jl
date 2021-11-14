@@ -2,12 +2,9 @@ using Test
 
 include("solutions.jl")
 
-input = "test"
+input = [17, 56]
 
 @testset "basic tests" begin
-  @test solutionpart1() == "1337"
-  @test solutionpart2() == "42"
-  @testset "sanity check" begin
-    @test latebinding() == "test"
-  end
+  @test solutionpart1() == "17"
+  @test solutionpart2() == "56"
 end
