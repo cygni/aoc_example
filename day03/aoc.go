@@ -2,17 +2,18 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
 )
 
-func getSolutionPart1() int {
-    return 1337
+func getSolutionPart1(input []int) int {
+    return input[0]
 }
 
-func getSolutionPart2() int {
-    return 42
+func getSolutionPart2(input []int) int {
+    return input[1]
 }
 
 func parseInput(input string) ([]int, error) {
@@ -33,11 +34,21 @@ func parseInput(input string) ([]int, error) {
 }
 
 func main() {
+	inputBytes, err := ioutil.ReadFile("input.txt")
+	if err != nil {
+		panic("couldn't read input")
+	}
+
+	input, err := parseInput(string(inputBytes))
+	if err != nil {
+		panic("couldn't parse input")
+	}
+
 	part := os.Getenv("part")
 
 	if part == "part2" {
-		fmt.Println(getSolutionPart2())
+		fmt.Println(getSolutionPart2(input))
 	} else {
-		fmt.Println(getSolutionPart1())
+		fmt.Println(getSolutionPart1(input))
 	}
 }
