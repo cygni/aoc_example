@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func getSolutionPart1() int {
@@ -11,6 +13,23 @@ func getSolutionPart1() int {
 
 func getSolutionPart2() int {
     return 42
+}
+
+func parseInput(input string) ([]int, error) {
+	var ints []int
+
+	lines := strings.Split(strings.TrimSpace(input), "\n")
+
+	for _, line := range lines {
+		i, err := strconv.Atoi(line)
+		if err != nil {
+			return nil, err
+		}
+
+		ints = append(ints, i)
+	}
+
+	return ints, nil
 }
 
 func main() {
