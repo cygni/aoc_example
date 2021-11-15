@@ -3,15 +3,15 @@ def file_content(filename)
 end
 
 def get_solution_part1
-    puts file_content("input.txt")[0]
+    file_content("input.txt")[0]
 end
 
 def get_solution_part2
-    puts file_content("input.txt")[1]
+    file_content("input.txt")[1]
 end
 
 if ENV["part"] == "part2" 
-    get_solution_part2
+    puts get_solution_part2
 else
-    get_solution_part1
+    puts get_solution_part1
 end
