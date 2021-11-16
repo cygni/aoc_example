@@ -80,4 +80,4 @@ Erlang
 Ruby
 
 ### Day 19
-Kotlin
+Kotlin with Gradle
