@@ -9,6 +9,15 @@ docker build -t aoc04 .
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in aoc.py).
+
+###With docker
+
 ```bash
 docker run -e part=part1 aoc04
+```
+
+###With python (no docker)
+
+```bash
+part=part1 python aoc.py
 ```

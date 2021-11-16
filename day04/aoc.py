@@ -1,10 +1,13 @@
 import os
 
+with open('input.txt') as f:
+    aoc_input = f.readlines()
+
 def getSolutionPart1():
-    return 1337
+    return aoc_input[0]
 
 def getSolutionPart2():
-    return 42
+    return aoc_input[1]
 
 part = os.environ.get('part')
 
