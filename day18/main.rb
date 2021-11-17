@@ -4,11 +4,11 @@ def file_content(filename="input.txt")
 end
 
 def get_solution_part1
-    file_content.inject(:+) # multiplies all integers in the file
+    file_content.inject(:+) # sums all integers in the file
 end
 
 def get_solution_part2
-    file_content.inject(:*) # sums all integers in the file
+    file_content.inject(:*) # multiplies all integers in the file
 end
 
 if ENV["part"] == "part2" 
