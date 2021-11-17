@@ -28,7 +28,7 @@ Och för part2.
 $ time docker run -e part=part2 "${dockerImage}"
 ```
 
-## Innhåll för respektive exempeldag
+## Innehåll för respektive exempeldag
 
 ### Day 01
 Java with Gradle
