@@ -3,8 +3,14 @@
 This project adds the source to a minimal Python image.
 
 ## How to build
+
 ```bash
 docker build -t aoc04 . 
+```
+## How to run the tests
+
+```bash
+python aoc_test.py
 ```
 
 ## How to run
