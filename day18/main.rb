@@ -1,13 +1,14 @@
-def file_content(filename)
+# returns an array with all lines in the file, each item converted to integer
+def file_content(filename="input.txt")
     File.open(filename).readlines().map(&:to_i)
 end
 
 def get_solution_part1
-    file_content("input.txt")[0]
+    file_content.inject(:+) # multiplies all integers in the file
 end
 
 def get_solution_part2
-    file_content("input.txt")[1]
+    file_content.inject(:*) # sums all integers in the file
 end
 
 if ENV["part"] == "part2" 
