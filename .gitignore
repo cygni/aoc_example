@@ -27,3 +27,6 @@ hs_err_pid*
 # Erlang
 *.beam
 erl_crash.dump
+
+#IntelliJ IDEA
+.idea
