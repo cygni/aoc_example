@@ -1,11 +1,14 @@
 # Exempelrepo för Cygnifierad Advent of Code
 Detta repo är ett exempel på hur du bör strukturera ditt repo för att dina lösningar på [Advent of Code](https://adventofcode.com/) ska kunna analyseras på ett korrekt sätt av den [Cygnifierade varianten](https://cygni.github.io/aoc).
 
+Varje dag innehåller en standardiserad lösning med filinläsning, datakonverting mellan sträng och heltal, och i de flesta fall
+även exempel på enhetstest.
+
 ## Katalogstruktur
 Varje dags lösningar måste placeras i en katalog med motsvarande namn; `day01`, `day02`, ..., `day25`. Det finns ett hjälpskript du kan använda för att generera katalogstrukturen: `create_directories.sh`
 
 ## Dockerfile för att mäta exekveringstid
-För att vi ska kunna mäta exekveringstid behöver varje dags lösning placeras i en Dockerfile. Denna bör innehålla ett CMD som triggar start av lösningen. Vi mäter nämligen exekveringstiden genom följande.
+För att vi ska kunna mäta exekveringstid behöver varje dags lösning placeras i en Dockerfile. Denna bör innehålla ett CMD som triggar start av lösningen. Dockerfile måste även kopiera in en fil som heter `./input.txt` med indatat. Vi mäter nämligen exekveringstiden genom att lägga in samma indata för alla, bygga docker imagen och exekvera följande:
 
 ```
 $ time docker run -e part=part1 "${dockerImage}"
@@ -68,7 +71,7 @@ Clojure (lisp), built with leiningen
 Ballerina
 
 ### Day 15
-Postgresql
+SQL (Postgresql)
 
 ### Day 16
 Coffeescript

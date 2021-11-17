@@ -5,4 +5,5 @@ RUN gcc -static -o aoc aoc.c
 
 FROM alpine:latest
 COPY --from=BASE /src/aoc /aoc
+COPY input.txt .
 CMD ["./aoc"]
