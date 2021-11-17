@@ -5,7 +5,9 @@ Varje dag innehåller en standardiserad lösning med filinläsning, datakonverti
 även exempel på enhetstest.
 
 ## Katalogstruktur
-Varje dags lösningar måste placeras i en katalog med motsvarande namn; `day01`, `day02`, ..., `day25`. Det finns ett hjälpskript du kan använda för att generera katalogstrukturen: `create_directories.sh`
+Varje dags lösningar måste placeras i en katalog med motsvarande namn; `day01`, `day02`, ..., `day25`. Det finns ett hjälpskript du kan använda för att generera katalogstrukturen: `create_directories.sh` eller ställ dig i ditt repo och exekvera följande i en terminal:
+
+```for i in $(seq -w 1 25); do mkdir "day$i"; done```
 
 ## Dockerfile för att mäta exekveringstid
 För att vi ska kunna mäta exekveringstid behöver varje dags lösning placeras i en Dockerfile. Denna bör innehålla ett CMD som triggar start av lösningen. Dockerfile måste även kopiera in en fil som heter `./input.txt` med indatat. Vi mäter nämligen exekveringstiden genom att lägga in samma indata för alla, bygga docker imagen och exekvera följande:
