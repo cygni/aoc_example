@@ -139,3 +139,9 @@ Ruby
 
 ### Day 19
 Kotlin with Gradle
+
+### Day 20
+Haskell
+
+### Day 21
+Ada
