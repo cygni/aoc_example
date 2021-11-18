@@ -47,7 +47,7 @@ What is the code? `[Insert answer]`
 
 ---
 
-Det hela är alltså uppbyggt med en story vars innehåll kanske inte alltid har superstor relevans kring själva problemet. Men, det kan den _absolut_ ha. I varje problem finns ett exempel för att ytterligare förtydliga vad som ska lösas. Exemplena är bra att ha medan du löser uppgiften, men för att komma vidare måste du lösa problemet med din angivna puzzle input, en textfil som kan se ut till exempel såhär:
+Det hela är alltså uppbyggt med en story där varje ord kanske inte har superstor relevans kring själva problemet, utan det gäller att identifiera vad som är viktigt. I varje uppgift finns ett exempel för att ytterligare förtydliga vad som ska lösas. Exemplena är bra att ha medan du löser uppgiften, men för att komma vidare måste du lösa problemet med din angivna puzzle input, en textfil som kan se ut till exempel såhär:
 
 ```
 233
