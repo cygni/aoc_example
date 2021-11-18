@@ -35,7 +35,7 @@ $ time docker run -e part=part2 "${dockerImage}"
 ---
 ZING! Your head says (or something like that) and you find yourself sitting on a carpet, almost blinded by the flourescent lights above you. What happened? Moments ago, you were partying with the elves on the snow planet. 
 
-Oh yeah, now you remember. The master elve, Jonir, poured you a hot beverage and said _"Here, drink. Only you can solve this quest"._ You grab after the mug you just held, but it seems like it vanished during the teleportation. But...what is this? A note? You read it carefully:
+Oh yeah, now you remember. The master elve, Jonir, poured you a hot beverage and said _"Here, drink. Only you can solve this quest"._ You grab after the mug you just held, but it seems like it vanished during the teleportation. But...what's this? A note? You read it carefully:
 
 _Find the Cygni door. Next to it, there will be a device with buttons. You have to enter the correct code in order for the device to unlock the door. The numbers are written on the back of this note. Add them together and enter the number._
 
@@ -47,7 +47,7 @@ What is the code? `[Insert answer]`
 
 ---
 
-Det hela är alltså uppbyggt med en story vars innehåll kanske inte alltid har superstor relevans kring själva problemet. Men, det kan den _absolut_ ha. I varje problem finns ett exempel för att ytterligare förtydliga problemet. Exemplena är bra att ha medan du löser uppgiften, men för att komma vidare måste du lösa problemet med din angivna puzzle input, en textfil som kan se ut till exempel såhär:
+Det hela är alltså uppbyggt med en story vars innehåll kanske inte alltid har superstor relevans kring själva problemet. Men, det kan den _absolut_ ha. I varje problem finns ett exempel för att ytterligare förtydliga vad som ska lösas. Exemplena är bra att ha medan du löser uppgiften, men för att komma vidare måste du lösa problemet med din angivna puzzle input, en textfil som kan se ut till exempel såhär:
 
 ```
 233
@@ -65,7 +65,7 @@ Det kan vara flera hundra rader, det är inget som går att göra huvudräkning 
 
 -- PART TWO--
 
-You enter the code on the device, something makes a whirring sound and the doors open. You step inside. Wow, what is this place? 
+You enter the code on the device, something makes a whirring sound and the door opens. You step inside. Wow, what is this place? 
 
 Glass walls, sofas, a pinball machine. What year is it even? Nevermind, there is no time to ponder, there was more written on the note! 
 
