@@ -12,9 +12,9 @@ function getSolutionPart2() {
     return inputDataLinesIntegers().reduce((x,y)=>x*y)
 }
 
-const part = process.env.part || "part1";
+const part = process.env.part || "part1"
 
 if (part === "part1")
-    console.log(getSolutionPart1());
+    console.log(getSolutionPart1())
 else
-    console.log(getSolutionPart2());
+    console.log(getSolutionPart2())
