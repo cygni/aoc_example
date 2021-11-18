@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class AppTest {
-    private static final List<Integer> INPUT = List.of(17, 56);
+    private static final List<Integer> INPUT = List.of(1337, 42);
     App classUnderTest;
 
     @BeforeEach
@@ -19,11 +19,11 @@ public class AppTest {
         classUnderTest = new App(INPUT);
     }
 
-    @Test void part1ReturnsFirstAsString() {
-        assertEquals("17", classUnderTest.getSolutionPart1());
+    @Test void part1SumsInput() {
+        assertEquals(1379, classUnderTest.getSolutionPart1());
     }
 
-    @Test void part2ReturnsSecondAsString() {
-        assertEquals("56", classUnderTest.getSolutionPart2());
+    @Test void part2MultipliesInput() {
+        assertEquals(56154, classUnderTest.getSolutionPart2());
     }
 }
