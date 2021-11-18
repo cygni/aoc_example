@@ -1,15 +1,15 @@
 const fs = require('fs')
 
-function inputDataLines(filename="input.txt") {
-    return fs.readFileSync(filename).toString().split("\n")
+function inputDataLinesIntegers(filename="input.txt") {
+    return fs.readFileSync(filename).toString().trim().split("\n").map((x)=>parseInt(x))
 }
 
 function getSolutionPart1() {
-    return inputDataLines()[0];
+    return inputDataLinesIntegers().reduce((x,y)=>x+y)
 }
 
 function getSolutionPart2() {
-    return inputDataLines()[1];
+    return inputDataLinesIntegers().reduce((x,y)=>x*y)
 }
 
 const part = process.env.part || "part1";
