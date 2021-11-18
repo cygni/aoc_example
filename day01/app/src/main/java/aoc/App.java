@@ -16,12 +16,12 @@ public class App {
         this.input = input;
     }
 
-    public String getSolutionPart1() {
-        return input.get(0).toString();
+    public Integer getSolutionPart1() {
+        return input.stream().mapToInt(Integer::intValue).sum();
     }
 
-    public String getSolutionPart2() {
-        return input.get(1).toString();
+    public Integer getSolutionPart2() {
+        return input.stream().mapToInt(Integer::intValue).reduce(1, Math::multiplyExact);
     }
 
     public static void main(String[] args) throws IOException {
@@ -36,7 +36,7 @@ public class App {
 
     private static List<Integer> parseInput(String filename) throws IOException {
         return Files.lines(Path.of(filename))
-            .map(Integer::parseInt)
-            .collect(Collectors.toList());
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
     }
 }

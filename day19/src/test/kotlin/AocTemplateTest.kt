@@ -4,12 +4,12 @@ import kotlin.test.assertEquals
 internal class AocTemplateTest {
 
     @Test
-    internal fun `solutionPart1 should return first value in input`() {
-        assertEquals(solutionPart1(listOf("1","2")), "1")
+    internal fun `solutionPart1 should return sum of input`() {
+        assertEquals(solutionPart1(listOf(1337,42)), 1379)
     }
 
     @Test
-    internal fun `solutionPart2 should return second value in input`() {
-        assertEquals(solutionPart2(listOf("1","2")), "2")
+    internal fun `solutionPart2 should return product of input`() {
+        assertEquals(solutionPart2(listOf(1337,42)), 56154)
     }
 }
