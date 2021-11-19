@@ -21,10 +21,10 @@ function readInput() returns int[]|error {
 function solve(string part) returns string {
     match part {
       ""|"part1" => {
-        return solutionPart1();
+        return solutionPart1().toString();
       }
       "part2" => {
-        return solutionPart2();
+        return solutionPart2().toString();
       }
       _ => {
         return "Unknown part " + part;
@@ -32,11 +32,15 @@ function solve(string part) returns string {
     }
 }
 
-function solutionPart1() returns string {
-    return input[0].toString();
+function solutionPart1() returns int {
+    return input.reduce(function (int a, int b) returns int {return a + b;}, 0);
 }
 
-function solutionPart2() returns string {
-    return input[1].toString();
+function solutionPart2() returns int {
+    int product = 1;
+    foreach int i in input {
+      product *= i;
+    }
+    return product;
 }
 
