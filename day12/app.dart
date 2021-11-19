@@ -2,12 +2,12 @@ import 'dart:io';
 import 'dart:convert';
 import 'dart:async';
 
-String solutionPart1(List<int> input) {
-  return input[0].toString();
+int solutionPart1(List<int> input) {
+  return input.reduce((value, element) => value + element);
 }
 
-String solutionPart2(List<int> input) {
-  return input[1].toString();
+int solutionPart2(List<int> input) {
+  return input.reduce((value, element) => value * element);
 }
 
 void main() async {
