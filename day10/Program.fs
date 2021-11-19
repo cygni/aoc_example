@@ -11,8 +11,8 @@ let main argv =
 
     printfn "F#\n%s" (
         match Environment.GetEnvironmentVariable("part") with
-        | null | "part1" -> solutionPart1 input
-        | "part2" -> solutionPart2 input
+        | null | "part1" -> input |> solutionPart1 |> string
+        | "part2" -> input |> solutionPart2 |> string
         | env -> $"Unknown value {env}"
     )
     0 // return an integer exit code
