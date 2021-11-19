@@ -9,9 +9,9 @@
 (defn parse-input [lines]
   (mapv #(Integer/parseInt %) lines))
 
-(defn solution-part1 [input] (str (first input)))
+(defn solution-part1 [input] (reduce + input))
 
-(defn solution-part2 [input] (str (nth input 1)))
+(defn solution-part2 [input] (reduce * input))
 
 (defn -main
   "AOC example solution"

@@ -4,6 +4,6 @@
 
 (deftest basic-test
   (testing "part1"
-    (is (= (day13.core/solution-part1 [17 56]) "17")))
+    (is (= (day13.core/solution-part1 [17 56]) 73)))
   (testing "part2"
-    (is (= (day13.core/solution-part2 [17 56]) "56"))))
+    (is (= (day13.core/solution-part2 [17 56]) 952))))

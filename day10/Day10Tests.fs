@@ -7,11 +7,11 @@ open Day10
 let input = [|17; 56|]
 
 [<Fact>]
-let ``Solution1 is 1337`` () =
+let ``Solution1 is 73`` () =
   input |> solutionPart1
-  |> should equal "17"
+  |> should equal 73
 
 [<Fact>]
-let ``Solution2 is 42`` () =
+let ``Solution2 is 952`` () =
   input |> solutionPart2
-  |> should equal "56"
+  |> should equal 952
