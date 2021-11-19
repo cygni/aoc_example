@@ -9,11 +9,19 @@ import (
 )
 
 func getSolutionPart1(input []int) int {
-    return input[0]
+	sum := 0
+	for _, value := range input {
+		sum += value
+	}
+	return sum
 }
 
 func getSolutionPart2(input []int) int {
-    return input[1]
+	product := 1
+	for _, value := range input {
+		product *= value
+	}
+	return product
 }
 
 func parseInput(input string) ([]int, error) {
