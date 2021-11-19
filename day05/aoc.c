@@ -51,17 +51,19 @@ Intlist* readInput() {
     return data;
 }
 
-char* getSolutionPart1(Intlist *data) {
-    // Here we just have to guess a max size, hope no buffer overflow
-    // We could, of course, just return an integer instead, but this is an example
-    char *result = malloc(10);
-    sprintf(result, "%d", data->elements[0]);
+int getSolutionPart1(Intlist *data) {
+    int result = 0;
+    for (int i = 0; i < data->size; ++i) {
+        result += data->elements[i];
+    }
     return result;
 }
 
-char* getSolutionPart2(Intlist *data) {
-    char *result = malloc(10);
-    sprintf(result, "%d", data->elements[1]);
+int getSolutionPart2(Intlist *data) {
+    int result = 1;
+    for (int i = 0; i < data->size; ++i) {
+        result *= data->elements[i];
+    }
     return result;
 }
 
@@ -72,9 +74,9 @@ int main() {
     char* part = getenv("part");
 
     if (part != NULL && strcmp("part2", part) == 0) {
-        printf("%s\n", getSolutionPart2(data));
+        printf("%d\n", getSolutionPart2(data));
     } else {
-        printf("%s\n", getSolutionPart1(data));
+        printf("%d\n", getSolutionPart1(data));
     }
 
    return 0;
