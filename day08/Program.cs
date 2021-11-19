@@ -5,14 +5,14 @@ namespace day08
 {
     class Program
     {
-        public static string getSolutionPart1(int[] input)
+        public static int getSolutionPart1(int[] input)
         {
-            return input[0].ToString();
+            return input.Sum();
         }
 
-        public static string getSolutionPart2(int[] input)
+        public static int getSolutionPart2(int[] input)
         {
-            return input[1].ToString();
+            return input.Aggregate((i,j) => i * j);
         }
 
         static void Main(string[] args)
