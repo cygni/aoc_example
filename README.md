@@ -145,3 +145,6 @@ Haskell
 
 ### Day 21
 Ada
+
+### Day 22
+Smalltalk
