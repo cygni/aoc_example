@@ -1,11 +1,7 @@
 function solutionpart1()
-  string(input[1])
+  sum(input)
 end
 
 function solutionpart2()
-  string(input[2])
-end
-
-function latebinding()
-  input
+  reduce(*, input)
 end
