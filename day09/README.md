@@ -1,23 +1,21 @@
-# Tailspin
-If you want to run Tailspin locally, you need java 16 or higher and download or build the tailspin.jar from the [Tailspin source](https://github.com/tobega/tailspin-v0)
+## Day 9 solution template
 
-If you use VSCode for editing, you may want the [Tailspin syntax highlighting extension](https://github.com/tobega/vsc-tailspin-language)
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 9 because we are in the `day09` directory). **The directory structure is important.**
 
-## How to run tests
-From a terminal open in this directory run `java -jar tailspin.jar --test app.tt < input.txt`
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-Normally you would probably write tests so you wouldn't need to use stdinput (the `< input.txt` bit),
-but this example does not override the reading of the input for the part2 test.
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day09` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
 
-## How to build
-```bash
-docker build -t aoc09 . 
-```
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
-```bash
-docker run -e part=part1 aoc09
-```
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
 
-To run locally, just type `java -jar tailspin.jar app.tt < input.txt` in the terminal (if you wish, replace input.txt with other input)
+### How to build
+`docker build -t aoc09 .`
+
+### How to run
+The environment variable `part` specifies which part of the solution to run.
+
+`docker run -e part=part1 aoc09`
+
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples/README.md).

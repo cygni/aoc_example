@@ -1,2 +1,2 @@
-1337
-42
+Day 12, Part 1
+Day 12, Part 2

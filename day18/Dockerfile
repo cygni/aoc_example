@@ -1,5 +1,5 @@
-FROM ruby:3.0
-COPY . /app
-WORKDIR /app
+FROM alpine:latest
+COPY . /solution
+WORKDIR /solution
 
-CMD ruby /app/main.rb
+CMD ./solution.sh

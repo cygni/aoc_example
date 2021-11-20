@@ -1,2 +1,2 @@
-1337
-42
+Day 13, Part 1
+Day 13, Part 2

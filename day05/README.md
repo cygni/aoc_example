@@ -1,19 +1,21 @@
-# C
+## Day 5 solution template
 
-This project builds the code in a Docker container and then transfers the resulting statically compiled binary to a new container. 
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 5 because we are in the `day05` directory). **The directory structure is important.**
 
-If you want to run locally as well, you need to get a c compiler. On mac you will be directed how if you try to run `gcc` and don't have it (Otherwise, you can try `sudo xcode-select --install` in a terminal)
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-## How to build
-```bash
-docker build -t aoc05 . 
-```
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day05` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in aoc.c).
-```bash
-docker run -e part=part1 aoc05
-```
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
 
-Running locally in a terminal, you need to first compile and then run the binary, e.g. `gcc -o aoc aoc.c && ./aoc`
-Note that the `-static` flag used in the Dockerfile will not work in a Mac because there aren't any static versions of some needed libraries.
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
+
+### How to build
+`docker build -t aoc05 .`
+
+### How to run
+The environment variable `part` specifies which part of the solution to run.
+
+`docker run -e part=part1 aoc05`
+
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples/README.md).
