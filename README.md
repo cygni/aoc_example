@@ -151,3 +151,6 @@ Smalltalk
 
 ### Day 23
 POSIX Shell
+
+### Day 24
+Postscript

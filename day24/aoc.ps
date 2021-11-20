@@ -1,0 +1,16 @@
+/input (input.txt) (r) file def
+[ {input 10 string readline {cvi} {exit} ifelse} loop pop ] % integer array on stack
+input closefile /input where pop /input undef
+
+/solutionPart1 {0 exch {add} forall} def
+
+/solutionPart2 {1 exch {mul} forall} def
+
+/part where {/part get} {(part1)} ifelse
+dup (part1) eq {pop solutionPart1} {
+  dup (part2) eq {pop solutionPart2}
+    {80 string dup 0 (Unknown part ) putinterval dup 3 -1 roll 13 exch putinterval}
+    ifelse
+} ifelse
+=
+quit
