@@ -1,0 +1,37 @@
+composer toint
+  <INT>
+end toint
+
+def input: [$IN::lines -> toint];
+
+source solutionPart1
+  $input ... -> ..=Sum&{of: :()} !
+end solutionPart1
+
+test 'part1 works'
+  modify program
+    def input: [17, 56];
+  end program
+  assert $solutionPart1 <=73> 'door code resolution'
+end 'part1 works'
+
+source solutionPart2
+  $input -> \(
+    @: $(1);
+    $(2..last)... -> @: $ * $@;
+    $@ !
+  \) !
+end solutionPart2
+
+test 'part2 works'
+  assert $solutionPart2 <=56154> 'jonirs password'
+end 'part2 works'
+
+// String interpolation is to create a empty string value when property does not exist (otherwise the flow would just stop)
+'$:'part' -> SYS::property;' -> \(
+  when <='part1'|=''> do $solutionPart1 !
+  when <='part2'> do $solutionPart2 !
+  otherwise 'Unknown part $;' !
+\) -> 'Tailspin
+$;
+' -> !OUT::write

@@ -1,0 +1,10 @@
+[package]
+distribution = "slbeta3"
+org = "cygni"
+name = "app"
+version = "0.0.1"
+
+[build-options]
+observabilityIncluded = true
+#uncomment below to let bal build a docker image
+#cloud = "docker"
