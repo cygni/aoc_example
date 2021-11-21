@@ -7,5 +7,5 @@ input_data_lines = () ->
 get_solution_part1 = () -> input_data_lines().reduce (x,y) -> x+y # adds all integers in the file
 get_solution_part2 = () -> input_data_lines().reduce (x,y) -> x*y # multiplies all integers in the file
 
-result = if process.env.part == "part1" then get_solution_part1() else get_solution_part2()
+result = if process.env.part == "part2" then get_solution_part2() else get_solution_part1()
 console.log result

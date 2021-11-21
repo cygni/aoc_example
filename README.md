@@ -10,6 +10,7 @@ Varje dags lösningar måste placeras i en katalog med motsvarande namn; `day01`
 För att vi ska kunna mäta exekveringstid behöver varje dags lösning placeras i en Dockerfile. Denna bör innehålla ett CMD som triggar start av lösningen. Dockerfile måste även kopiera in en fil som heter `./input.txt` med indatat. Vi mäter nämligen exekveringstiden genom att lägga in samma indata för alla, bygga docker imagen och exekvera följande:
 
 ```
+$ docker build -t "${dockerImage}" .
 $ time docker run -e part=part1 "${dockerImage}"
 ```
 

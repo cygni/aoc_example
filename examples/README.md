@@ -1,8 +1,12 @@
 # Exempeluppgift och språkmallar
 
-För att alla ska komma igång utan krångel med det/de språk de vill köra har vi här lagt upp färdiga mallar med `Dockerfile`, input-inläsning och lite annat som är 100% Cygnifierad AoC-certified, för en mängd olika språk. Det är bara att botanisera bland katalogerna ovan, kanske hittar du rentav något nytt språk att prova?
+För att alla ska komma igång utan krångel med det/de språk de vill köra har vi här lagt upp färdiga mallar med `Dockerfile`, input-inläsning och lite annat som är 100% Cygnifierad AoC-certified, för en mängd olika språk. Det är bara att botanisera bland katalogerna ovan, kanske hittar du rentav något nytt (eller gammalt) språk att prova?
 
-Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi författat ihop. Tanken med exempeluppgiften är att framförallt ge våra debutanter en bild av hur en AoC-uppgift kan se ut. **Eventuella paralleller mellan karaktärer i exemplet och Jon Persson är helt dina egna isåfall, vi tar inget ansvar.**  
+Vi har allt från moderna versioner av LISP och FORTRAN som började sina banor på 1950-talet till Ballerina som kom i version 1 2018 och är nu omarbetat i beta3 av version 2. Allt från ren objektorientering i Smalltalk och Ruby till renaste funktioner i Haskell. Från Javascript som enligt myten slarvigt slängdes ihop på en vecka, till Ada som frambringades efter en gedigen kravinsamling och en designtävling med 16 lag. Från C som finns i botten någonstans på varje modern dator och Postscript som finns i de flesta skrivare, till Tailspin som, såvitt känt, bara använts av en enda person.
+
+Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi författat ihop här nedanför. Tanken med exempeluppgiften är att framförallt ge våra debutanter en bild av hur en AoC-uppgift kan se ut. **Eventuella paralleller mellan karaktärer i exemplet och Jon Persson är helt dina egna isåfall, vi tar inget ansvar.**  
+
+Eller så kör du helt enkelt dina egna favoriter. För mer läsning om programmeringsspråk kanske artikeln ["The perfect programming language"](https://cygni.se/the-perfect-programming-language/) kan vara av intresse.
 
 ### Exempeluppgift
 
