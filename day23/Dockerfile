@@ -1,4 +1,4 @@
-FROM bash:4.4
+FROM alpine:latest
 COPY . /solution
 WORKDIR /solution
 

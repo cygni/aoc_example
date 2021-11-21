@@ -10,13 +10,13 @@ From a terminal open in this directory run `julia runtests.jl`
 
 ## How to build
 ```bash
-docker build -t aoc11 . 
+docker build -t aoc_julia . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc11
+docker run -e part=part1 aoc_julia
 ```
 
 To run locally, just type `julia app.jl` in the terminal.

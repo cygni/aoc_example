@@ -1,27 +1,21 @@
-# Kotlin with gradle
+## Day 19 solution template
 
-This project builds the code in a Docker container and then transfers the resulting JAR-file to a new container. 
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 19 because we are in the `day19` directory). **The directory structure is important.**
 
-## How to build
-```bash
-docker build -t aoc19 . 
-```
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-## How to run tests
-Use the integrated test runner in your IDE or run `./gradlew test`
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day19` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
 
-## How to run
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
 
-The environment variable `part` specifies which part of the puzzle to solve. If the environment variable is not set, it will default to `part1`.
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
 
-### Run with docker
+### How to build
+`docker build -t aoc19 .`
 
-```bash
-docker run -e part=part2 aoc19
-```
+### How to run
+The environment variable `part` specifies which part of the solution to run.
 
-### Run with gradle (no docker)
+`docker run -e part=part1 aoc19`
 
-```bash
-part=part2 ./gradlew run
-```
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples).

@@ -1,2 +1,2 @@
-1337
-42
+Day 14, Part 1
+Day 14, Part 2

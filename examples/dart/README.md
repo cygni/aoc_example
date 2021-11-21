@@ -8,13 +8,13 @@ From a terminal open in this directory run `dart app_test.dart` (You may need to
 
 ## How to build
 ```bash
-docker build -t aoc12 . 
+docker build -t aoc_dart . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc12
+docker run -e part=part1 aoc_dart
 ```
 
 To run locally, just type `dart app.dart` in the terminal.

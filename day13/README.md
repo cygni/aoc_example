@@ -1,27 +1,21 @@
-# Clojure
-Clojure is a LISP running on the JVM. You can access the java SDK pretty easily.
+## Day 13 solution template
 
-LISP people are special snowflakes, everyone seems to make their own tools and even their own versions of LISP, but here are
-some reasonable choices that can get you started (obviously you need java installed first):
-1. Install the [CLI tools](https://clojure.org/guides/getting_started)
-2. Install [Leiningen](https://leiningen.org/)
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 13 because we are in the `day13` directory). **The directory structure is important.**
 
-Now you're good to go with just a text editor, but if you use VSCode, the [Calva extension](https://calva.io/) comes recommended, as does the [Cursive plugin](https://cursive-ide.com/) for IntelliJ
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-## How to run tests
-From a terminal open in this directory run `lein test` (although note that clojurians mostly just run stuff in the REPL)
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day13` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
 
-## How to build
-```bash
-docker build -t aoc13 . 
-```
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
-```bash
-docker run -e part=part1 aoc13
-```
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
 
-To run locally, just type `lein run` in the terminal.
+### How to build
+`docker build -t aoc13 .`
 
-If you want to run a REPL, but not through an IDE plugin, you can start one with the `clj` command.
+### How to run
+The environment variable `part` specifies which part of the solution to run.
+
+`docker run -e part=part1 aoc13`
+
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples).

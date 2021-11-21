@@ -11,13 +11,13 @@ but this example does not override the reading of the input for the part2 test.
 
 ## How to build
 ```bash
-docker build -t aoc09 . 
+docker build -t aoc_tailspin . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc09
+docker run -e part=part1 aoc_tailspin
 ```
 
 To run locally, just type `java -jar tailspin.jar app.tt < input.txt` in the terminal (if you wish, replace input.txt with other input)

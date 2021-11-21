@@ -1,2 +1,2 @@
-1337
-42
+Day 8, Part 1
+Day 8, Part 2

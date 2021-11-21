@@ -4,7 +4,7 @@ This project builds the code in a Docker container and then transfers the result
 
 ## How to build
 ```bash
-docker build -t aoc01 . 
+docker build -t aoc_java . 
 ```
 
 ## How to run tests
@@ -13,7 +13,7 @@ Use the integrated test runner in your IDE or run `gradle test`
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in App.java).
 ```bash
-docker run -e part=part1 aoc01
+docker run -e part=part1 aoc_java
 ```
 
 Alternatively, you can run a single file main program directly by `java app/src/main/java/aoc/App.java`. If you have more source

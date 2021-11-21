@@ -1,4 +1,5 @@
-FROM alpine
-RUN apk add ghostscript
-COPY . .
-CMD gs --permit-file-read=./ -spart=$part aoc.ps
+FROM alpine:latest
+COPY . /solution
+WORKDIR /solution
+
+CMD ./solution.sh

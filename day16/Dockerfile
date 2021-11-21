@@ -1,6 +1,5 @@
-FROM node:17-slim
-COPY . /app
-WORKDIR /app
-RUN npm install -g coffeescript
+FROM alpine:latest
+COPY . /solution
+WORKDIR /solution
 
-CMD coffee /app/index.coffee
+CMD ./solution.sh

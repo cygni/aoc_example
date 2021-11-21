@@ -4,7 +4,7 @@ This project builds the code in a Docker container and then transfers the result
 
 ## How to build
 ```bash
-docker build -t aoc19 . 
+docker build -t aoc_kotlin . 
 ```
 
 ## How to run tests
@@ -17,7 +17,7 @@ The environment variable `part` specifies which part of the puzzle to solve. If 
 ### Run with docker
 
 ```bash
-docker run -e part=part2 aoc19
+docker run -e part=part2 aoc_kotlin
 ```
 
 ### Run with gradle (no docker)

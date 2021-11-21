@@ -1,14 +1,21 @@
-# Haskell with ghc
+## Day 20 solution template
 
-This project adds the code to an image, compiles it and runs main.hs
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 20 because we are in the `day20` directory). **The directory structure is important.**
 
-## How to build
-```bash
-docker build -t aoc20 . 
-```
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in main.hs).
-```bash
-docker run -e part=part1 aoc02
-```
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day20` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
+
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
+
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
+
+### How to build
+`docker build -t aoc20 .`
+
+### How to run
+The environment variable `part` specifies which part of the solution to run.
+
+`docker run -e part=part1 aoc20`
+
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples).

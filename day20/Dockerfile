@@ -1,7 +1,5 @@
-FROM haskell:8
+FROM alpine:latest
+COPY . /solution
+WORKDIR /solution
 
-COPY . /app
-WORKDIR /app
-RUN ./build.sh
-
-CMD ./main
+CMD ./solution.sh

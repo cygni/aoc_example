@@ -1,2 +1,2 @@
-1337
-42
+Day 1, Part 1
+Day 1, Part 2

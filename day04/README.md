@@ -1,29 +1,21 @@
-# Python
+## Day 4 solution template
 
-This project adds the source to a minimal Python image.
+This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 4 because we are in the `day04` directory). **The directory structure is important.**
 
-## How to build
+The setup must include a `Dockerfile` that includes the solution source code. **Your source code must expect the input data (i.e. the puzzle input) as `input.txt`**.
 
-```bash
-docker build -t aoc04 . 
-```
-## How to run the tests
+Please note that, as we want to use the same input for all participants, we will replace your possibly committed `input.txt`. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day04` (in this case) into your image, but uploading your puzzle input to Github is not necessary.
 
-```bash
-python aoc_test.py
-```
+From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in aoc.py).
+Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
 
-### With docker
+### How to build
+`docker build -t aoc04 .`
 
-```bash
-docker run -e part=part1 aoc04
-```
+### How to run
+The environment variable `part` specifies which part of the solution to run.
 
-### With python (no docker)
+`docker run -e part=part1 aoc04`
 
-```bash
-part=part1 python aoc.py
-```
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples).

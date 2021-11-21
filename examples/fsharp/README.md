@@ -7,13 +7,13 @@ Open a terminal in this directory and type `dotnet test`
 
 ## How to build
 ```bash
-docker build -t aoc10 . 
+docker build -t aoc_fsharp . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc10
+docker run -e part=part1 aoc_fsharp
 ```
 
 To run locally, just type `dotnet run`
