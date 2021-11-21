@@ -9,7 +9,7 @@ Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi f
 ---
 ZING! Your head says (or something like that) and you find yourself sitting on a carpet, almost blinded by the flourescent lights above you. What happened? Moments ago, you were partying with the elves on the snow planet. 
 
-Oh yeah, now you remember. The master elve, Jonir, poured you a hot beverage and said _"Here, drink. Only you can solve this quest"._ You grab after the mug you just held, but it seems like it vanished during the teleportation. But...what's this? A note? You read it carefully:
+Oh yeah, now you remember. The master elf, Jonir, poured you a hot beverage and said _"Here, drink. Only you can solve this quest"._ You grab after the mug you just held, but it seems like it vanished during the teleportation. But...what's this? A note? You read it carefully:
 
 _Find the Cygni door. Next to it, there will be a device with buttons. You have to enter the correct code in order for the device to unlock the door. The numbers are written on the back of this note. Add them together and enter the number._
 
