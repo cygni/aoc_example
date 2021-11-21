@@ -13,13 +13,13 @@ From a terminal open in this directory run `lein test` (although note that cloju
 
 ## How to build
 ```bash
-docker build -t aoc13 . 
+docker build -t aoc_clojure . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc13
+docker run -e part=part1 aoc_clojure
 ```
 
 To run locally, just type `lein run` in the terminal.

@@ -4,13 +4,13 @@ Example AoC project in Ruby (built for Cygni)
 
 ## How to build Docker image
 ```bash
-docker build -t aoc18 . 
+docker build -t aoc_ruby . 
 ```
 
 ## How to run Docker image
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in ``main.rb``).
 ```bash
-docker run -e part=part1 aoc18
+docker run -e part=part1 aoc_ruby
 ```
 
 ## Development 

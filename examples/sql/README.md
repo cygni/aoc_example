@@ -10,13 +10,13 @@ If you want to run SQL locally, you need to get a database engine, we use [Postg
 
 ## How to build
 ```bash
-docker build -t aoc15 . 
+docker build -t aoc_sql . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc15
+docker run -e part=part1 aoc_sql
 ```
 
 To run locally, you need to set up and start a database server. Normally, the database would be run as a service on a different machine,

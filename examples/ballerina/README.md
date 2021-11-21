@@ -8,13 +8,13 @@ From a terminal open in this directory run `bal test`
 
 ## How to build
 ```bash
-docker build -t aoc14 . 
+docker build -t aoc_ballerina . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
 ```bash
-docker run -e part=part1 aoc14
+docker run -e part=part1 aoc_ballerina
 ```
 
 To run locally, just type `bal run` in the terminal.

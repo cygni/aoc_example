@@ -6,13 +6,13 @@ If you want to run locally as well, you need to get a c compiler. On mac you wil
 
 ## How to build
 ```bash
-docker build -t aoc05 . 
+docker build -t aoc_c . 
 ```
 
 ## How to run
 The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in aoc.c).
 ```bash
-docker run -e part=part1 aoc05
+docker run -e part=part1 aoc_c
 ```
 
 Running locally in a terminal, you need to first compile and then run the binary, e.g. `gcc -o aoc aoc.c && ./aoc`
