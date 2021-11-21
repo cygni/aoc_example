@@ -4,7 +4,7 @@ This shows the basics of the setup needed to participate in the Cygnified AoC wi
 
 The setup must include a `Dockerfile` that includes the solution source code. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day19` (in this case) into your image. We will insert (or replace an existing) `input.txt` before creating the image, so uploading it to Github is not necessary (but not prohibited, either). The reason for this is that we use the same input for everyone, in order to be as fair as possible.
 
-From all this magic setup, the Cygnified AoC-engine can create an image, feed it with `input.txt` and register your solution (and that's awesome).
+From all this magic setup, the Cygnified AoC-engine can create a valid image and you're in the game (and that's awesome).
 
 Shell scripting is fun and all, but we have provided examples for many different languages to get you up and running with your favourite weapons, have a look [here](../examples)
 
