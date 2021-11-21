@@ -2,6 +2,14 @@
 
 Example AoC project in Ruby (built for Cygni)
 
+## The Ruby language
+
+[Ruby](https://www.ruby-lang.org/en/) is a dynamically typed scripting language, 
+similar to Python in features and usability (in [my](https://github.com/robu) humble opinion),
+although the "look&feel" is quite different from Python. 
+Its popularity, and to some extent decline, corresponds well to the popularity of its most 
+well-known web framework, [Ruby on Rails](https://rubyonrails.org/).
+
 ## How to build Docker image
 ```bash
 docker build -t aoc_ruby . 
@@ -21,7 +29,13 @@ part=part1 ruby main.rb
 ```
 
 To run the unit tests, you need to have the ``test-unit`` gem installed, which you get by
-running ``bundle install``. Then try:
+running 
+
+```bash 
+bundle install
+```
+
+Then try:
 ```bash
 ruby test/main_test.rb
 ```
