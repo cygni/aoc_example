@@ -1,5 +1,14 @@
 # GNU Smalltalk
 
+## The Smalltalk language
+
+Smalltalk is probably the most "classic object-oriented" programming language. There are many
+dialects and implementations out there, but this example uses 
+[GNU Smalltalk](https://www.gnu.org/software/smalltalk/).
+
+Smalltalk's syntax is quite different from most other languages, but it's also very simple
+and extremely consistent, so it doesn't take long to learn. 
+
 ## How to build
 ```bash
 docker build -t aoc_smalltalk .
