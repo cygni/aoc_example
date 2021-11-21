@@ -1,8 +1,8 @@
 # Exempeluppgift och språkmallar
 
-För att alla ska kunna igång utan krångel med det språk de vill köra har vi här lagt upp mallar med `Dockerfile`, input-inläsning och lite annat som är 100% Cygnifierad AoC-certified, för en mängd olika språk. Det är bara att botanisera bland katalogerna ovan, kanske hittar du något nytt att prova?
+För att alla ska komma igång utan krångel med det/de språk de vill köra har vi här lagt upp färdiga mallar med `Dockerfile`, input-inläsning och lite annat som är 100% Cygnifierad AoC-certified, för en mängd olika språk. Det är bara att botanisera bland katalogerna ovan, kanske hittar du rentav något nytt språk att prova?
 
-Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi författat ihop. Tanken är att framförallt ge våra debutanter en bild av hur en AoC-uppgift kan se ut. **Eventuella paralleller mellan karaktärer i exemplet och Jon Persson är helt dina egna isåfall, vi tar inget ansvar.**  
+Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi författat ihop. Tanken med exempeluppgiften är att framförallt ge våra debutanter en bild av hur en AoC-uppgift kan se ut. **Eventuella paralleller mellan karaktärer i exemplet och Jon Persson är helt dina egna isåfall, vi tar inget ansvar.**  
 
 ### Exempeluppgift
 

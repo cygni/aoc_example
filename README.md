@@ -30,4 +30,4 @@ Samtliga dagars mappar i det här repot (`day01` osv) innehåller en enkel men k
 
 
 ## Exempel på uppgift och mallar för olika språk
-Hittar du [här](./examples/README.md)
+Hittar du [här](./examples)

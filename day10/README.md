@@ -18,4 +18,4 @@ The environment variable `part` specifies which part of the solution to run.
 
 `docker run -e part=part1 aoc10`
 
-**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples/README.md).
+**As this is just a template**, all that `part1` and `part2` does is to print the first and last line of `input.txt`, respectively. For a more realistic example, have a look [here](../examples).
