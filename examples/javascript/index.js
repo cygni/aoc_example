@@ -12,6 +12,7 @@ function getSolutionPart2() {
     return inputDataLinesIntegers().reduce((x,y)=>x*y)
 }
 
+console.log("Javascript")
 const part = process.env.part || "part1"
 
 if (part === "part1")
