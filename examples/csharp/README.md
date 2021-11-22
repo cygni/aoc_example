@@ -1,19 +1,13 @@
 # C# (.NET Core 5.0)
+When Microsoft got into trouble for trying to take over Java (embrace and extend), they needed a new strategy for getting a "serious" language onto the Windows platform since Visual Basic was considered to be a bit of a toy. So C# came out looking almost identical to Java and James Gosling (creator of Java) said that "[C# is] sort of Java with reliability, productivity and security deleted." In return, Anders Hejlsberg (creator of C#) claimed that C# is much closer to C++ in its design and that the flaws of major modern languages (e.g. C++, Java, Delphi and Smalltalk) were the driving forces for creating the CLR and C# itself (fair enough, Java is also inspired by C++ and Smalltalk). Since 2005, Java and C# have diverged and become more different from each other. Ironically, Visual Basic is still the most productive language in .NET.
 
-This project builds the code in a Docker container and then transfers the resulting binary to a new container with just the .NET Core runtime. 
+To run the code locally, you will need to install [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 ## How to run tests
 Open a terminal in this directory and type `dotnet test`
 
-## How to build
-```bash
-docker build -t aoc_csharp . 
-```
-
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in Program.cs).
-```bash
-docker run -e part=part1 aoc_csharp
-```
-
+## How to build and run
 To run locally, just type `dotnet run`
+
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)

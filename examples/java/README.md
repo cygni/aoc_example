@@ -1,26 +1,18 @@
 # Java with gradle
+Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. Java had limited success as applets on the web and also powered some desktop applications, but eventually found a welcome home as a backend server language. Along the way, a chip that ran java natively was also developed.
 
-This project builds the code in a Docker container and then transfers the resulting JAR-file to a new container. 
+The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". The inspiration was a C++-like syntax, without the most obvious flaws, and a simple Smalltalk-like Object Oriented design. Sun also realised that the time for charging money for programming languages had passed, so Java was released for free (as in beer), and Java is now our most beloved workhorse.
 
-## How to build
-```bash
-docker build -t aoc_java . 
-```
+If you want to run java locally you will need a jvm. If you don't have a jvm, you can [get one here](https://adoptopenjdk.net/)
 
 ## How to run tests
 Use the integrated test runner in your IDE or run `gradle test`
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in App.java).
-```bash
-docker run -e part=part1 aoc_java
-```
+## How to build and run
+You could just type `gradle run`
 
 Alternatively, you can run a single file main program directly by `java app/src/main/java/aoc/App.java`. If you have more source
 files you have to compile first
-```bash
-javac app/src/main/java/aoc/*
-java java -cp app/src/main/java aoc.App
-```
 
-Or, using gradle, do `gradle run`
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)

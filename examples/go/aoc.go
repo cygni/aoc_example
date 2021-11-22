@@ -52,6 +52,7 @@ func main() {
 		panic("couldn't parse input")
 	}
 
+	fmt.Println("Go")
 	part := os.Getenv("part")
 
 	if part == "part2" {
