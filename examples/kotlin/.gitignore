@@ -5,6 +5,9 @@
 build
 bin/
 
+# Gradle wrapper jar needs to be included
+!gradle-wrapper.jar
+
 # Eclipse crap
 .settings/
 .project

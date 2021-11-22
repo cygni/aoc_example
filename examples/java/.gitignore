@@ -4,6 +4,9 @@
 # Ignore Gradle build output directory
 build
 
+# Gradle wrapper jar needs to be included
+!gradle-wrapper.jar
+
 #Ignore vscode stuff
 .vscode
 .project
