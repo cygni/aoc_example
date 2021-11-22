@@ -7,8 +7,22 @@ Every professional programmer has to use Javascript to some extent, so it's real
 
 If you want to run locally, you need to [get node](https://nodejs.org/en/). If you want to use any external packages, this project is set up to [use yarn](https://yarnpkg.com/)
 
-## How to build and run
-In the terminal, you can just type `node index.js` (and if you use any external packages you need to first `yarn install`)
-
 ## Docker
 According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)
+
+## Development
+
+To run without Docker, just do
+
+```bash
+node index.js
+```
+
+To run the unit tests (found in the ``test`` directory), run this before first time:
+```bash
+yarn install
+```
+Then run this for testing:
+```bash
+yarn test
+```
