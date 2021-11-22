@@ -1,6 +1,5 @@
 FROM node:17-slim
-COPY . /app
-WORKDIR /app
+COPY . .
 RUN yarn install
 
-CMD node /app/index.js
+CMD node index.js
