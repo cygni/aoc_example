@@ -12,17 +12,12 @@ According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)
 
 ## Development
 
-To run without Docker, just do
+To run without Docker, just do `node index.js`
 
-```bash
-node index.js
-```
+To run the unit tests (found in the `test` directory), run this before first time: 
 
-To run the unit tests (found in the ``test`` directory), run this before first time:
-```bash
-yarn install
-```
+`yarn install`
+
 Then run this for testing:
-```bash
-yarn test
-```
+
+`yarn test`
