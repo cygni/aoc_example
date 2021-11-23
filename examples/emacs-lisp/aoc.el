@@ -19,6 +19,8 @@
   "Solve part 2 by calculating the product of the numbers in INPUT."
   (apply '* input))
 
+(message "Elisp")
+
 (defvar aoc-part (getenv "part"))
 (message
  (cond ((string= aoc-part "part1") (number-to-string (solve1 aoc-input)))
