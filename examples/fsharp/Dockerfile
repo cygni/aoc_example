@@ -13,4 +13,4 @@ WORKDIR /app
 COPY --from=build /app .
 COPY input.txt .
 
-ENTRYPOINT ["./day10"]
+ENTRYPOINT ["./aoc"]

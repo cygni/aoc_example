@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Day10.fs" />
+    <Compile Include="Aoc.fs" />
     <!-- Note that a file must come after those it references -->
-    <Compile Include="Day10Tests.fs" />
+    <Compile Include="AocTests.fs" />
     <!-- Note that file with main must be last -->
     <Compile Include="Program.fs" />
   </ItemGroup>
