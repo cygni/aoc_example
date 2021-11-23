@@ -1,6 +1,6 @@
-name:                aoc-hs
+name:                aoc
 version:             0.1.0.0
-github:              "githubuser/aoc-hs"
+github:              "githubuser/aoc"
 license:             BSD3
 author:              "Author name here"
 maintainer:          "example@example.com"
@@ -25,7 +25,7 @@ library:
   source-dirs: src
 
 executables:
-  aoc-hs-exe:
+  aoc:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -33,10 +33,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - aoc-hs
+    - aoc
 
 tests:
-  aoc-hs-test:
+  aoc-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -44,4 +44,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - aoc-hs
+    - aoc
