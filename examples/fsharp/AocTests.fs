@@ -1,8 +1,8 @@
-module Day10Tests
+module AocTests
 
 open FsUnit.Xunit
 open Xunit
-open Day10
+open Aoc
 
 let input = [|17; 56|]
 

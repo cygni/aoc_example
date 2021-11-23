@@ -1,4 +1,4 @@
-module Day10
+module Aoc
 
 let solutionPart1 (input:int[]) = input |> Array.sum
 

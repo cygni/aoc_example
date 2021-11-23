@@ -1,7 +1,7 @@
 // Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
 
 open System
-open Day10
+open Aoc
 
 [<EntryPoint>]
 let main argv =
