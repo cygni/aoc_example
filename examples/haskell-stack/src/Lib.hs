@@ -2,17 +2,17 @@ module Lib
   ( aoc )
 where
 
-import           System.Environment (getEnv)
+import           System.Environment (lookupEnv)
 
 type Input = [Int]
 
 aoc :: IO ()
 aoc = do
   input <- readInput
-  part  <- getEnv "part"
+  part  <- lookupEnv "part"
   print $ case part of
-    "part2" -> solve2 input
-    _       -> solve1 input
+    Just "part2" -> solve2 input
+    _            -> solve1 input
 
 solve1 :: [Int] -> Int
 solve1 = sum

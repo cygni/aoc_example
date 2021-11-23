@@ -1,14 +1,25 @@
-# Haskell with ghc
+# Haskell with [Stack](https://docs.haskellstack.org/en/stable/README/)
+A description of Haskell and a link to get stated with Haskell can be found [here](../haskell/README.md).
 
-This project adds the code to an image, compiles it and runs main.hs
+Running Haskell with external dependencies can be a hassle if you're not using a package manager, therefore we have included this example project using the package manager Sack.
+Stack enables you to easily make use of commmunity packages such as: implmentations of you favorite datastructures in[containers](https://hackage.haskell.org/package/containers) or a parsing library for reading the input of the day such as [megaparsec](https://hackage.haskell.org/package/megaparsec).
+More interesting packages can be found at <https://hackage.haskell.org/packages/browse>.
 
-## How to build
-```bash
-docker build -t aoc_haskell . 
+To make use of these packages you simply add them to `package.yml` like so:
+
+``` yaml
+dependencies:
+- base >= 4.7 && < 5 # The haskell base package
+- containers
+- megaparsec
 ```
 
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in main.hs).
-```bash
-docker run -e part=part1 aoc_haskell
-```
+When the package version is omitted Stack will choose the latest possible version.
+
+## How to build and run
+In your terminal, type `stack build && stack exec aoc-hs-exe`.
+
+You can also experiment interactively with code by running `stack ghci`
+
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)
