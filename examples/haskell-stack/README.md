@@ -1,8 +1,8 @@
 # Haskell with [Stack](https://docs.haskellstack.org/en/stable/README/)
-A description of Haskell and a link to get stated with Haskell can be found [here](../haskell/README.md).
+A description of Haskell and a link to get started with Haskell can be found [here](../haskell/README.md).
 
-Running Haskell with external dependencies can be a hassle if you're not using a package manager, therefore we have included this example project using the package manager Sack.
-Stack enables you to easily make use of commmunity packages such as: implmentations of you favorite datastructures in[containers](https://hackage.haskell.org/package/containers) or a parsing library for reading the input of the day such as [megaparsec](https://hackage.haskell.org/package/megaparsec).
+Running Haskell with external dependencies can be a hassle if you're not using a package manager, therefore we have included this example project using the package manager Stack.
+Stack enables you to easily make use of commmunity packages such as: implementations of you favorite datastructures in[containers](https://hackage.haskell.org/package/containers) or a parsing library for reading the input of the day such as [megaparsec](https://hackage.haskell.org/package/megaparsec).
 More interesting packages can be found at <https://hackage.haskell.org/packages/browse>.
 
 To make use of these packages you simply add them to `package.yml` like so:
