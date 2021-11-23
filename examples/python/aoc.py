@@ -14,6 +14,7 @@ def getSolutionPart2(input_list):
 with open('input.txt') as f:
     file_input = [int(x) for x in f.readlines()]
 
+print('Python')
 part = environ.get('part')
 
 if part == 'part2':

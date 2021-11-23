@@ -15,6 +15,7 @@ fn main() {
         Err(_e) => "part1".to_string(),
     };
 
+    println!("Rust");
     if part == "part2" {
         println!("{}", getSolutionPart2());
     } else {

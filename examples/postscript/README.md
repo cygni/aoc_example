@@ -9,15 +9,8 @@ With the above knowledge, chapter 8 on Operators in [the definitive language def
 
 If you want to run Postscript locally, install ghostscript, available in most package managers.
 
-## How to build
-```bash
-docker build -t aoc_postscript . 
-```
-
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
-```bash
-docker run -e part=part1 aoc_postscript
-```
-
+## How to build and run
 To run locally, `gs --permit-file-read=./ -spart=part1 aoc.ps`. Or just type `gs` in the terminal and you can play around interactively.
+
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)
