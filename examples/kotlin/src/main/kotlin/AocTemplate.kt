@@ -6,6 +6,7 @@ fun main() {
         "part2" -> solutionPart2(input)
         else -> solutionPart1(input)
     }
+    println("Kotlin")
     println(answer)
 }
 

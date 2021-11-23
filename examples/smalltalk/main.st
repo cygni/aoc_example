@@ -13,13 +13,15 @@ Object subclass: AocExample [
         ^self inputData inject: 1 into: [:x :y | x * y]
     ]
     run: part [
-        ^part = 'part1'
-            ifTrue: [^self part1]
-            ifFalse: [^self part2]
+        ^part = 'part2'
+            ifTrue: [^self part2]
+            ifFalse: [^self part1]
     ]
 ]
 
 aoc := AocExample new.
+'Smalltalk' displayOn: stdout.
+Character nl displayOn: stdout.
 part := Smalltalk getenv: 'part'.
 answer := aoc run: part.
 answer printOn: stdout.

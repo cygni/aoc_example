@@ -1,14 +1,7 @@
 # Rust
+Rust was developed when people at Mozilla got tired of Firefox crashing from memory-handling issues in C code. It features a unique ownership model regulating how memory may be accessed, which has now made Firefox the most stable browser. Rust has been voted most loved language for the past six years in Stack Overflow's annual developer survey. That's got to pique your interest, although be prepared to fight the borrow-checker until you reach enlightenment.
 
-This project builds the code in a Docker container and then transfers the resulting binary to a new alpine container. 
+## How to build and run
 
-## How to build
-```bash
-docker build -t aoc_rust . 
-```
-
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly (see example in src/main.rs).
-```bash
-docker run -e part=part1 aoc_rust
-```
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)

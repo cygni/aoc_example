@@ -8,16 +8,7 @@ Warning, though, problems that rely heavily on iteration can be challenging to g
 
 If you want to run SQL locally, you need to get a database engine, we use [Postgresql](https://www.postgresql.org/)
 
-## How to build
-```bash
-docker build -t aoc_sql . 
-```
-
-## How to run
-The environment variable "part" specifies which part of the solution to run. Please adjust your code accordingly.
-```bash
-docker run -e part=part1 aoc_sql
-```
+## How to build and run
 
 To run locally, you need to set up and start a database server. Normally, the database would be run as a service on a different machine,
 and the [Docker base image we use](https://hub.docker.com/_/postgres) would just start a database server by default. Or it could be used to run as a client process interactively. We just use the installed software and do both of those things in our Dockerfile. To set things up:
@@ -35,3 +26,6 @@ Of course, you can run it interactively and experiment as you go by starting a s
 SQL has been criticized for not being mathematically pure, especially for allowing NULL and duplicate rows (i.e. a bag instead of a set of rows). An attempt to remedy this was set out in "The third manifesto" by Date&Darwen and one implementation of those ideas is the language TutorialD, whaich can be run in [Rel DB](https://reldb.org/c/)
 
 The power of relational algebra can also be explored in [Tailspin](https://github.com/tobega/tailspin-v0/blob/master/TailspinReference.md#relations) (more third-manifesto-like), [Ballerina](https://ballerina.io/learn/by-example/table-syntax.html?is_ref_by_example=true) and of course [LINQ in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview)
+
+## Docker
+According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)

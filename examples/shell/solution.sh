@@ -14,6 +14,7 @@ multiply(){
     done < "input.txt"
 }
 
-[ "$part" = "part1" ] && sum || multiply
+echo "Shell"
+[ "$part" = "part2" ] && multiply || sum
 
 printf "%s\n" "$res"
