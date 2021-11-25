@@ -1,7 +1,5 @@
-FROM swipl AS build
+FROM swipl
 COPY aoc.pl .
 RUN swipl --stand_alone=true -o app -c  aoc.pl
-FROM alpine
-COPY --from=build app .
 COPY input.txt .
 CMD [ "./app" ]

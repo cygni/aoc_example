@@ -24,6 +24,7 @@ list_product([H|T], Product) :-
 :- initialization(main, main).
 
 main(_):-
+  writeln('Prolog'),
   getLines(L),
   (   not(getenv('part', _))
   ->  P = 'part1'
