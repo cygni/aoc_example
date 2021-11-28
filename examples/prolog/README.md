@@ -4,6 +4,8 @@ Instead of defining functions that you call, you set up rules defining the relat
 Then if you query a rule by putting values in all parameters, you will get either true or false.
 But instead of a value you could put in a free variable, in which case you will get all possible values (or combinations of values) for the free variables. In a sense, prolog "functions" can run both forwards and backwards.
 
+The elevator guide to Prolog syntax is that `:-` means something like "is true if", while commas are "logical and" and semi-colons are "logical or". Everything is about determining the logical truth of a statement, or finding those values that can be assigned to the free variables so it becomes true.
+
 We use the [SWI-Prolog implementation](https://www.swi-prolog.org/) and you will have to install it if you want to run locally.
 
 ## How to build and run
