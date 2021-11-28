@@ -1,6 +1,9 @@
 # Scala 3
 
-*Insert snarky language description here.*
+Straight-up quote from Wikipedia here:
+>Scala (/ˈskɑːlɑː/ SKAH-lah) is a strong statically typed general-purpose programming language which supports both object-oriented programming and functional programming. Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.
+
+Scala is a powerful language, but also criticised for its complexity and steep learning-curve. Try it out and judge for yourself!
 
 ## Development
 
