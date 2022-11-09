@@ -1,14 +1,12 @@
-# Exempeluppgift och språkmallar
+# Puzzle example and language templates
 
-För att alla ska komma igång utan krångel med det/de språk de vill köra har vi här lagt upp färdiga mallar med `Dockerfile`, input-inläsning och lite annat som är 100% Cygnifierad AoC-certified, för en mängd olika språk. Det är bara att botanisera bland katalogerna ovan, kanske hittar du rentav något nytt (eller gammalt) språk att prova?
+To make sure that everyone gets going without fuzz in the language(s) they want, we've prepared templates for a wide variety of languages. These include a `Dockerfile`, reading from an input-file and some other sweet stuff in a 100% Cygni-AoC-certifed manner. Meaning, follow these templates for the language you want to use and everything should work just fine. Is the language of your choice missing a template? Feel free to create a PR, don't hesitate to ask for help in #adventofcode!
 
-Vi har allt från moderna versioner av LISP och FORTRAN som började sina banor på 1950-talet till Ballerina som kom i version 1 2018 och är nu omarbetat i beta3 av version 2. Allt från ren objektorientering i Smalltalk och Ruby till renaste funktioner i Haskell. Från Javascript som enligt myten slarvigt slängdes ihop på en vecka, till Ada som frambringades efter en gedigen kravinsamling och en designtävling med 16 lag. Från C som finns i botten någonstans på varje modern dator och Postscript som finns i de flesta skrivare, till Tailspin som, såvitt känt, bara använts av en enda person.
+We've got it all. Modern versions av LISP and FORTRAN, languages that saw the light of day in the 50's, all the way to Ballerina that released v1 in 2018. Object oriented Smalltalk and Ruby, pure functional Haskell. Developed-in-a-haste Javascript (according to the myth), 16-team-design-competition Ada. Of course we have a template for C, a language that exists somewhere in all modern computers and Postscript that reside in most printers. but also Tailspin that as far as we know, only have been used by two people. If you want to read more about programming languages, the article ["The perfect programming language"](https://cygni.se/the-perfect-programming-language/) is a good read.
 
-Som grädde på moset är samtliga mallar lösningar på den exempeluppgift vi författat ihop här nedanför. Tanken med exempeluppgiften är att framförallt ge våra debutanter en bild av hur en AoC-uppgift kan se ut. **Eventuella paralleller mellan karaktärer i exemplet och Jon Persson är helt dina egna isåfall, vi tar inget ansvar.**  
+Pretty cool, huh? Well, as icing on the cake, all the templates also happen to be solutions to the example puzzle below. If you are new to Advent of Code, this gives a somewhat true picture of how a puzzle can look.
 
-Eller så kör du helt enkelt dina egna favoriter. För mer läsning om programmeringsspråk kanske artikeln ["The perfect programming language"](https://cygni.se/the-perfect-programming-language/) kan vara av intresse.
-
-### Exempeluppgift
+### Puzzle Example
 
 ---
 ZING! Your head says (or something like that) and you find yourself sitting on a carpet, almost blinded by the flourescent lights above you. What happened? Moments ago, you were partying with the elves on the snow planet. 
@@ -25,7 +23,7 @@ What is the code? `[Insert answer]`
 
 ---
 
-Det hela är alltså uppbyggt med en story där varje ord kanske inte har superstor relevans kring själva problemet, utan det gäller att identifiera vad som är viktigt. I varje uppgift finns ett exempel för att ytterligare förtydliga vad som ska lösas. Exemplena är bra att ha medan du löser uppgiften, men för att komma vidare måste du lösa problemet med din angivna puzzle input, en textfil som kan se ut till exempel såhär:
+Both in this example and in the real Advent of Code, the puzzles are always built around a story. Now, the story itself may not be super relevant to solving the problem, it's up to you to identify what's important. In every puzzle, there are examples that are meant to clarify what task you need to carry out. These are great to use as tests for your own solution. But, you must solve your problem with the provided _puzzle input_ (sometimes several hundred lines long, meaning that you have to _code_ to solve your problem). There will be a link to it on your puzzle page (and not everyone has the same puzzle input). For this particular puzzle, it might look something like this: 
 
 ```
 233
@@ -37,7 +35,7 @@ Det hela är alltså uppbyggt med en story där varje ord kanske inte har supers
 918
 ```
 
-Det kan vara flera hundra rader, det är inget som går att göra huvudräkning på utan du måste programmera. Förutsatt att du skriver in rätt svar, låser du upp del 2. Här gäller _samma_ puzzle input, men ett nytt problem som ska lösas. Exempel:
+If you provide the right answer, part two will be unlocked. Note that part two uses _the same_ puzzle input, but typically a tougher problem.
 
 ---
 
