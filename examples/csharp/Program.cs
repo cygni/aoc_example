@@ -1,39 +1,15 @@
-﻿using System;
-using System.Linq;
+﻿using aoc;
 
-namespace day08
+var input = File.ReadLines("input.txt").Select(int.Parse);
+
+var part = Environment.GetEnvironmentVariable("part");
+
+var solution = part switch
 {
-    class Program
-    {
-        public static int getSolutionPart1(int[] input)
-        {
-            return input.Sum();
-        }
+    "part1" => Puzzle.GetSolutionPart1(input),
+    "part2" => Puzzle.GetSolutionPart2(input),
+    _ => throw new ArgumentOutOfRangeException(nameof(part), $"Unexpected {nameof(part)} value: '{part}'")
+};
 
-        public static int getSolutionPart2(int[] input)
-        {
-            return input.Aggregate((i,j) => i * j);
-        }
-
-        static void Main(string[] args)
-        {
-            int[] input = parseInput("input.txt");
-
-            var part = Environment.GetEnvironmentVariable("part");
-
-            Console.WriteLine("C#");
-            if ("part2".Equals(part)) {
-                Console.WriteLine(getSolutionPart2(input));
-            } else {
-                Console.WriteLine(getSolutionPart1(input));
-            }
-            
-        }
-
-        static int[] parseInput(string filename) {
-            return System.IO.File.ReadLines(filename)
-            .Select(line => Int32.Parse(line))
-            .ToArray();
-        }
-    }
-}
+Console.WriteLine("C#");
+Console.WriteLine(solution);
