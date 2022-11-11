@@ -1,3 +1,1 @@
-
-rootProject.name = "kotlinapp"
-
+rootProject.name = "kotlin_cygni_aoc"
