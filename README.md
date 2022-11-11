@@ -1,34 +1,37 @@
-# Exempelrepo för Cygnifierad Advent of Code
-Detta repo är ett exempel på hur du ska strukturera ditt repo för att dina lösningar på [Advent of Code](https://adventofcode.com/) ska kunna analyseras på ett korrekt sätt av den [Cygnifierade varianten](https://cygni.github.io/aoc).
+# Example repo for the Cygnified Advent of Code
+This repo is an example showing how to structure your own repo in a way that your solutions on [Advent of Code](https://adventofcode.com/) can be analyzed correctly on the [Cygnified version](https://aoc-2022.cygni.se).
 
-## Katalogstruktur
-Varje dags lösningar måste placeras i en katalog med motsvarande namn; `day01`, `day02`, ..., `day25`. Det finns ett hjälpskript du kan använda för att generera katalogstrukturen: `create_directories.sh` eller ställ dig i ditt repo och exekvera följande i en terminal:
+## Folder structure
+You solutions must be placed in a folder corresponding to the day that your solutions belong to; `day01`, `day02` etc. There's a script called `create_directories.sh` which you can use to generate all 25 days. Or, if you want you can just execute this in the root of your repo:
 
 ```for i in $(seq -w 1 25); do mkdir "day$i"; done```
 
-## Dockerfile för att mäta exekveringstid
-För att vi ska kunna mäta exekveringstid behöver varje dags lösning placeras i en Dockerfile. Denna bör innehålla ett CMD som triggar start av lösningen. Dockerfile måste även kopiera in en fil som heter `./input.txt` med indatat. Vi mäter nämligen exekveringstiden genom att lägga in samma indata för alla, bygga docker imagen och exekvera följande:
+## Dockerfile to measure execution time
+In order to measure execution time, every solultion needs to be place in a `Dockerfile`. This needs to contain a command (`CMD`) that triggers a run of your solution. `Dockerfile` must also copy a file named `./input.txt`, because we use the same input file for everyone. We will then build the image and execute the following: 
 
 ```
 $ docker build -t "${dockerImage}" .
 $ time docker run -e part=part1 "${dockerImage}"
 ```
 
-### Miljövariabel för de två delmomenten
-Som du ser i exemplet ovan hur exekveringstiden mäts så anges en miljövariabel `part`. Varje dags problem under Advent of Code har två nivåer part1 och part2. Se exempeldagarna i detta repo för att se hur du kan lösa detta. Det viktiga för att det ska kunna mätas är just att miljövariabeln kan sättas vid uppstart av dockercontainern för part1.
+### Environment variable for the two parts
+As you can see in the example above, the execution time is measured using the environment variable `part`. Every day, there will be a part 1 and part 2 on Adevent of Code. Please have a look at the examples (`day01` etc) to see how you can solve this. It's important that the environment variable is correctly setup in order to measure time:
 
 ```
 $ time docker run -e part=part1 "${dockerImage}"
 ```
 
-Och för part2.
+And for part 2:
 ```
 $ time docker run -e part=part2 "${dockerImage}"
 ```
 
-## Exempel på korrekt struktur
-Samtliga dagars mappar i det här repot (`day01` osv) innehåller en enkel men korrekt variant på den struktur som krävs.
+## Examples of corect structure
+All folders in this repo (`day01` etc) contains a simple but correct setup. Please have a look at it.
 
 
-## Exempel på uppgift och mallar för olika språk
-Hittar du [här](./examples)
+## Puzzle example and solutions in many different languages
+You'll find [here](./examples)
+
+## Any questions?
+Don't fret. Let us know in #adventofcode. We're all here to help each other and have fun!
