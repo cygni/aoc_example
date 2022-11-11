@@ -7,7 +7,7 @@ Your solutions must be placed in a folder corresponding to the day that the solu
 ```for i in $(seq -w 1 25); do mkdir "day$i"; done```
 
 ## Dockerfile to measure execution time
-In order to measure execution time, every solultion needs to be place in a `Dockerfile`. This needs to contain a command (`CMD`) that triggers a run of your solution. `Dockerfile` must also copy a file named `./input.txt`, because we use the same input file for everyone. We will then build the image and execute the following: 
+In order to measure execution time, every solultion needs to be place in a `Dockerfile`. This needs to contain a command (`CMD`) that triggers a run of your solution. `Dockerfile` must also copy a file named `./input.txt` so that your solution has access to the input data. We will then build the image and execute the following: 
 
 ```
 $ docker build -t "${dockerImage}" .
@@ -15,15 +15,21 @@ $ time docker run -e part=part1 "${dockerImage}"
 ```
 
 ### Environment variable for the two parts
-As you can see in the example above, the execution time is measured using the environment variable `part`. Every day, there will be a part 1 and part 2 on Advent of Code. Please have a look at the examples (`day01` etc) to see how you can solve this. It's important that the environment variable is setup correctly in order to measure time:
+As you can see in the example above, the execution time is measured using the environment variable `part`. Every day, there will be a part 1 and part 2 on Advent of Code. Please have a look at the examples (`day01` etc) to see how you can solve this. It's important that the environment variable is setup correctly in order to measure time. We measure time by running 
 
 ```
-$ time docker run -e part=part1 "${dockerImage}"
+$ docker run -e part=part1 "${dockerImage}"
 ```
 
-And for part 2:
+And then inspecting the Docker container something like this:
 ```
-$ time docker run -e part=part2 "${dockerImage}"
+  START=$(docker inspect --format='{{.State.StartedAt}}' $CONTAINER_ID)
+  STOP=$(docker inspect --format='{{.State.FinishedAt}}' $CONTAINER_ID)
+
+  START_TIMESTAMP=$(date --date=$START +%s%N)
+  STOP_TIMESTAMP=$(date --date=$STOP +%s%N)
+
+  echo $((($STOP_TIMESTAMP-$START_TIMESTAMP)/1000000)) 
 ```
 
 ## Examples of correct structure
@@ -34,4 +40,4 @@ All folders in this repo (`day01` etc) contains a simple but correct setup. Plea
 You'll find [here](./examples)
 
 ## Any questions?
-Don't fret. Let us know in #adventofcode. We're all here to help each other and have fun!
+Don't fret. Let us know in [#adventofcode](https://cygni.slack.com/archives/C87HA2UNL). We're all here to help each other and have fun!
