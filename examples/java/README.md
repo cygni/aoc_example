@@ -6,12 +6,12 @@ The principles for creating Java programming were "Simple, Robust, Portable, Pla
 If you want to run java locally you will need a jvm. If you don't have a jvm, you can [get one here](https://adoptopenjdk.net/)
 
 ## How to run tests
-Use the integrated test runner in your IDE or run `gradle test`
+Use the integrated test runner in your IDE or run `./gradlew test`
 
 ## How to build and run
-You could just type `gradle run`
+You could just type `./gradlew run`
 
-Alternatively, you can run a single file main program directly by `java app/src/main/java/aoc/App.java`. If you have more source
+Alternatively, you can run a single file main program directly by `java src/main/java/aoc/App.java`. If you have more source
 files you have to compile first
 
 ## Docker
