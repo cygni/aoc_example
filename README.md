@@ -11,7 +11,7 @@ In order to measure execution time, every solultion needs to be place in a `Dock
 
 ```
 $ docker build -t "${dockerImage}" .
-$ time docker run -e part=part1 "${dockerImage}"
+$ docker run -e part=part1 "${dockerImage}"
 ```
 
 ### Environment variable for the two parts
