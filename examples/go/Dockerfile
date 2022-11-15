@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine as BASE
+FROM golang:1.19-alpine as BASE
 WORKDIR /src
 COPY ./ .
 RUN go build -o /bin/aoc
