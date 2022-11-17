@@ -7,11 +7,11 @@ Use the integrated testrunner in Xcode or run `swift test`
 
 ## How to build and run
 Run the command `swift build -c release` to build a release version of the application.
-Then type `./.build/release/AoC` to run.
+Then type `./.build/release/AoC` to run the application.
 
 ## Docker
 The example DockerFile contains instructions to build and run the application in a Docker container. 
-Use `docker build -t day01´ to build the image of for example the first day 
+Use `docker build -t day01` to build the image of for example the first day 
 Then run `docker run day01` to run the image of that the day
 
 ## Creating a Swift folder structure for a new AoC day
