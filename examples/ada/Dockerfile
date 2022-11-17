@@ -1,4 +1,4 @@
-FROM ubuntu as BASE
+FROM ubuntu:focal as BASE
 RUN apt-get update
 RUN apt-get -y install gnat-9
 RUN apt-get -y install gprbuild

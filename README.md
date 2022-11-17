@@ -14,6 +14,8 @@ $ docker build -t "${dockerImage}" .
 $ docker run -e part=part1 "${dockerImage}"
 ```
 
+As an alternative to docker during development, you can use [podman](https://podman.io/), which has the same commands.
+
 ### Environment variable for the two parts
 As you can see in the example above, the execution time is measured using the environment variable `part`. Every day, there will be a part 1 and part 2 on Advent of Code. Please have a look at the examples (`day01` etc) to see how you can solve this. It's important that the environment variable is setup correctly in order to measure time. We measure time by running 
 

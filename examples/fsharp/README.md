@@ -1,4 +1,4 @@
-# F# (.NET Core 5.0)
+# F# (.NET Core 7.0)
 F# is a functional language in the ML (Meta Language) tradition, whose main feature is pattern matching in patterns that simultaneously do destructuring assignments, as well as really good type inference. It has been proved that a well-typed ML program cannot get a runtime type error. F# runs on the .NET CLR, so you can also access everything from the standard CLR libraries. F# is also known for having support for units of measure and the pipeline syntax, similar to unix shell pipes.
 
 To run the code locally, you will need to install [latest .NET](https://dotnet.microsoft.com/download)
