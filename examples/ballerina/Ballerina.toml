@@ -1,5 +1,5 @@
 [package]
-distribution = "slbeta3"
+distribution = "2201.2.3"
 org = "cygni"
 name = "app"
 version = "0.0.1"
