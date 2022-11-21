@@ -14,5 +14,24 @@ but this example does not override the reading of the input for the part2 test.
 ## How to build and run
 To run locally, just type `java -jar tailspin.jar app.tt < input.txt` in the terminal (if you wish, replace input.txt with other input)
 
+You can clone https://github.com/tobega/vsc-tailspin-language into ~/.vscode/extensions to get syntax highlighting for Tailspin in VSCode.
+
+In VSCode, you can use the following launch configuration (replace /path/to):
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "classPaths": ["/path/to/tailspin.jar"],
+      "mainClass": "tailspin.Tailspin",
+      "args": "${file} < input.txt"
+    }
+  ]
+}
+```
+
 ## Docker
 According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example)
