@@ -4,7 +4,7 @@ This repo is an example showing how to structure your own repo in a way that you
 ## Folder structure
 Your solutions must be placed in a folder corresponding to the day that the solutions belong to; `day01`, `day02` etc. There's a script called `create_directories.sh` which you can use to generate all 25 days. Or, if you want you can just execute this in the root of your repo:
 
-```for i in $(seq -w 1 25); do mkdir "day$i"; done```
+```mkdir day{01..25}```
 
 ## Dockerfile to measure execution time
 In order to measure execution time, every solultion needs to be place in a `Dockerfile`. This needs to contain a command (`CMD`) that triggers a run of your solution. `Dockerfile` must also copy a file named `./input.txt` so that your solution has access to the input data. We will then build the image and execute the following: 
