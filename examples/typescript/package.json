@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
+    "time": "time node dist/index.js",
     "test": "jest src"
   },
   "devDependencies": {

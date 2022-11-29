@@ -1,5 +1,7 @@
 import * as fs from "fs";
 import path from "path";
+import addAll from "./addAll";
+import multiplyAll from "./multiplyAll";
 
 const readInput = (filename = "../input.txt"): number[] =>
   fs
@@ -8,9 +10,6 @@ const readInput = (filename = "../input.txt"): number[] =>
     .trim()
     .split("\n")
     .map((x) => parseInt(x));
-
-const addAll = (numbers: number[]): number => numbers.reduce((x, y) => x + y);
-const multiplyAll = (numbers: number[]): number => numbers.reduce((x, y) => x * y);
 
 export const solutionOne = (): number => addAll(readInput());
 export const solutionTwo = (): number => multiplyAll(readInput());
