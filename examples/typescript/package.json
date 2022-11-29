@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc",
     "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest src"
   },
   "devDependencies": {
     "@jest/globals": "^29.0.3",

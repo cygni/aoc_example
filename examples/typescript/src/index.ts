@@ -1,8 +1,9 @@
 import * as fs from "fs";
+import path from "path";
 
-const readInput = (filename = "input.txt"): number[] =>
+const readInput = (filename = "../input.txt"): number[] =>
   fs
-    .readFileSync(filename)
+    .readFileSync(path.resolve(__dirname, filename))
     .toString()
     .trim()
     .split("\n")
@@ -14,8 +15,7 @@ const multiplyAll = (numbers: number[]): number => numbers.reduce((x, y) => x * 
 export const solutionOne = (): number => addAll(readInput());
 export const solutionTwo = (): number => multiplyAll(readInput());
 
-console.log("Typescript");
-const part = process.env.part || "part1";
+const part: string = process.env.part || "part1";
 
 if (part === "part1") {
   console.log(solutionOne());

@@ -1,6 +1,6 @@
 import { solutionOne, solutionTwo } from "./index";
 
-describe("typescript example", () => {
+describe("typescript example test", () => {
   it("solution one", () => {
     expect(solutionOne()).toBe(1379);
   });
