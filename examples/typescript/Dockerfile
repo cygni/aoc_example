@@ -1,11 +1,12 @@
 FROM node:18-slim as installer
 WORKDIR /app
-COPY package.json package-lock.json tsconfig.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 FROM node:18-slim as builder
 WORKDIR /app
 COPY --from=installer ./app .
+COPY tsconfig.json .
 COPY src src
 RUN npm run build
 
