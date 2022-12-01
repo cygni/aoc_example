@@ -2,7 +2,7 @@
 
 This shows the basics of the setup needed to participate in the Cygnified AoC with your solution for a given day (in this case day 20 because we are in the `day20` directory). **The directory structure is important.**
 
-The setup must include a `Dockerfile` that includes the solution source code. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day20` (in this case) into your image. We will insert (or replace an existing) `input.txt` before creating the image, so uploading it to Github is not necessary (but not prohibited, either). The reason for this is that we use the same input for everyone, in order to be as fair as possible.
+The setup must include a `Dockerfile` that includes the solution source code. Your `Dockerfile` must include a `COPY` statement that copies `input.txt` (and possibly other files) from the root of `day02` (in this case) into your image. That is, we will use your individual `puzzle input` provided by Advent of Code when analysing your solution.
 
 From all this magic setup, the Cygnified AoC-engine can create a valid image and you're in the game (and that's awesome).
 
