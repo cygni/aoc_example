@@ -9,12 +9,16 @@ Open a terminal in this directory and type `dotnet test`.
 ## How to build and run
 To run locally, type for example:
 ```bash
-export part=part1
-dotnet run
-export part=part2
-dotnet run
-unset part
+part=part1 dotnet run
+part=part2 dotnet run
 ```
 
 ## Docker
 According to the [Cygni AoC procedure](https://github.com/cygni/aoc_example).
+
+Type for example:
+```bash
+docker build -t aoc_csharp .
+docker run --rm -e part=part1 aoc_csharp
+docker run --rm -e part=part2 aoc_csharp
+```
