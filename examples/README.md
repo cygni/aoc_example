@@ -8,16 +8,15 @@ Pretty cool, huh? Well, as icing on the cake, all the templates also happen to b
 
 # Tips and tricks (2023 edition)
 
-Make sure to use an alpine based image wherever possible, this will give you a better result and really speeds up the build process. The buildserver runs on an amd64 ubuntu 20.04 LTS server, so make sure to specify a target platform of `linux/amd64` when running docker build. This will make sure that your image is compatible with the buildserver.
+Use an alpine linux based image wherever possible, this will give you a better result and speeds up the build process. The buildserver runs on an amd64 ubuntu 20.04 LTS server, in order to be compatible with the buildserver, specify `linux/amd64` when running docker build.
 
-How to test if your solution builds locally. 
+How to test if your solution builds locally, regardless of which platform you are developing on. 
 
 Examples:
 ```
 docker build solution_folder --platform linux/amd64 # old builder
 docker buildx build solution_folder --platform linux/amd64 # new (preferred) builder
 ```
-
 
 ### Puzzle Example
 
