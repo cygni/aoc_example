@@ -6,6 +6,18 @@ We've got it all. Modern versions of LISP and FORTRAN, languages that saw the li
 
 Pretty cool, huh? Well, as icing on the cake, all the templates also happen to be solutions to the example puzzle below. If you are new to Advent of Code, this gives a somewhat true picture of how a puzzle can look.
 
+# Tips and tricks (2023 edition)
+
+Use an alpine linux based image wherever possible, this will give you a better result and speeds up the build process. The buildserver runs on an amd64 ubuntu 20.04 LTS server, in order to be compatible with the buildserver, specify `linux/amd64` when running docker build.
+
+How to test if your solution builds locally, regardless of which platform you are developing on. 
+
+Examples:
+```
+docker build solution_folder --platform linux/amd64 # old builder
+docker buildx build solution_folder --platform linux/amd64 # new (preferred) builder
+```
+
 ### Puzzle Example
 
 ---
